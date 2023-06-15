@@ -3,24 +3,24 @@ Projet intégratif de la SAE 24 "Localiser une source sonore dans un environneme
 
 Problématique professionnelle :
 
-– Compréhension d’une architecture complète (réseaux, télécommunications, système et service)
+  – Compréhension d’une architecture complète (réseaux, télécommunications, système et service)
 
-● Analyse de l’ensemble des briques
+    ● Analyse de l’ensemble des briques
 
-● Intervention sur les composants
+    ● Intervention sur les composants
 
-● Interaction entre les composants
+    ● Interaction entre les composants
 
-● Proposition de pistes d’amélioration
+    ● Proposition de pistes d’amélioration
 
 
 Situation professionnelle :
 
-– Exploiter un signal sonore (sinusoïdal) émis par un objet et reçu par trois microphones.
+  – Exploiter un signal sonore (sinusoïdal) émis par un objet et reçu par trois microphones.
 
-– Estimer la position en (x,y) de l’objet dans une pièce.
+  – Estimer la position en (x,y) de l’objet dans une pièce.
 
-– Présenter l’estimation de la position sur une interface dédiée (site web)
+  – Présenter l’estimation de la position sur une interface dédiée (site web)
 
 
 Diagramme de GANTT prévisionnel : 
