@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
  <head>
-  <link rel="stylesheet" type="text/css" href="../styles/forme_général.css" media="screen"/>
-  <title>Administration</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style_login.css">
+	<title>Tableau récapitulatif</title>
   <meta charset="utf-8">
  </head>
  
  <body>
- <header>
-   <nav>
-   
-    <ul>
+   <header>
+        <nav class="navbar">
+            <div class="nav-links">
+				<ul>
 			
 		   <li><a href="../index.html" >Accueil</a></li>
 		   <li><a href="../consultation/consultation.php">Consultation</a></li>
