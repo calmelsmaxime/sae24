@@ -17,5 +17,6 @@ une pièce.
 interface dédiée (site web)
 
 Diagramme de GANTT prévisionnel : 
+
 ![GanttPrevisionnel1](https://github.com/calmelsmaxime/sae24/assets/133324260/f6d54c82-221e-45ec-b1bf-237558963111)
 ![GanttPrevisionnel2](https://github.com/calmelsmaxime/sae24/assets/133324260/d738f2b5-1cf2-4446-8cf1-cbadd99c7590)
