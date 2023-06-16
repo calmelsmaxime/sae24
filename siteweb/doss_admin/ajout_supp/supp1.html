@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../styles/style_login.css">
 	<title>Ajout ou suppression de valeur</title>
-	<meta charset="utf-8">
  </head>
  
  <body>
@@ -28,18 +27,19 @@
   
   <section>
 
-	<form action="ajout1.html" method="post">			
-			<input type="submit" value="Cliquez ici pour ajouter une valeur">
+	<form action="supp.php" method="post">	
+	
+			<label for="Date">Choisissez la date : </label><br>
+			<input type="date" id="Date" name="Date"><br>
+			
+			<label for="horaire">Choisissez son horaire : </label><br>
+			<input type="time" id="horaire" name="horaire"><br>
+		
+
+			
+			<input type="submit" value="Cliquez ici pour supprimer la valeur">
 		</form>
-&ensp;
-		<form action="supp1.html" method="post">			
-			<input type="submit" value="Cliquez ici pour supprimer une valeur">
-		</form>
-&ensp;
-		<form action="supp_der.php" method="post">			
-			<input type="submit" value="Cliquez ici pour supprimer la dernière valeur">
-		</form>
-&ensp;
+
 
 
 
@@ -54,4 +54,3 @@
   </footer>
 
 </body>
-</html>

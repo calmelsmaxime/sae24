@@ -28,19 +28,25 @@
   
   <section>
 
-	<form action="ajout1.html" method="post">			
-			<input type="submit" value="Cliquez ici pour ajouter une valeur">
-		</form>
-&ensp;
-		<form action="supp1.html" method="post">			
-			<input type="submit" value="Cliquez ici pour supprimer une valeur">
-		</form>
-&ensp;
-		<form action="supp_der.php" method="post">			
-			<input type="submit" value="Cliquez ici pour supprimer la dernière valeur">
-		</form>
-&ensp;
+	<form action="ajout.php" method="post">			
 
+			<label for="Date">Choisissez la date : </label><br>
+			<input type="date" id="Date" name="Date"><br>
+			
+			<label for="horaire">Choisissez son horaire : </label><br>
+			<input type="time" id="horaire" name="horaire"><br>
+			
+			<label for="val1">La valeur du capteur 1 </label><br>
+			<input type="number" id="val1" name="val1"><br>
+			
+			<label for="val2">La valeur du capteur 2 </label><br>
+			<input type="number" id="val2" name="val2"><br>
+			
+			<label for="val3">La valeur du capteur 2 </label><br>
+			<input type="number" id="val3" name="val3"><br>
+						
+			<input type="submit" value="Cliquez ici pour ajouter la mesure ">
+		</form>
 
 
 </section>
@@ -54,4 +60,3 @@
   </footer>
 
 </body>
-</html>

@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style_login.css">
+	<link rel="stylesheet" href="../styles/tableau.css">
 	<title>Tableau récapitulatif</title>
-  <meta charset="utf-8">
+
  </head>
  
  <body>
@@ -31,61 +32,56 @@
         <tr>
             <th>Date</th>
             <th>Heure</th>
-			<th>case axes x</th>
-			<th>case axes y</th>
-            <th>amplitude capteur 1</th>
-			<th>amplitude capteur 2</th>
-			<th>amplitude capteur 3</th>
+			<th>Case</th>
+            <th>Amplitude capteur 1</th>
+			<th>Amplitude capteur 2</th>
+			<th>Amplitude capteur 3</th>
         </tr>
 
 <?php 
 
 require '../connexion_bd.php';
 
-// Requête pour trouver les 10 dernière mesures
-sql = 'SELECT * FROM resultat
+// Requête pour trouver les 10 dernière mesures dans la table 
+$sql = "SELECT * FROM mesures
 		ORDER BY id DESC
-		LIMIT 10';
+		LIMIT 10";
 $result = mysqli_query($conn, $sql);
-$row = mysqli_fetch_assoc($result);
 
-//Disconnecting from the database
-mysqli_close($conn);
 
 
 // Afficher dans le tableau
-while (row){
+while ($row = mysqli_fetch_assoc($result)){
 
-    $date = $row['Date']; 
-	$heure = $row['Horaire'];
+	$id = $row['id'];
+    $date = $row['date']; 
+	$heure = $row['heure'];
 	$heure_formatee = date("H:i:s", strtotime($heure));
-	$case_axes_x = $row [''];
-	$case_axes_y = $row [''];
-	$amplitude_capteur_1 = $row [''];
-	$amplitude_capteur_2 = $row [''];
-	$amplitude_capteur_3 = $row [''];
+	$amplitude_capteur_1 = $row ['valeur_c1'];
+	$amplitude_capteur_2 = $row ['valeur_c2'];
+	$amplitude_capteur_3 = $row ['valeur_c3'];
 
+	$sql2 = "SELECT * FROM resultat
+			WHERE id = $id 
+			LIMIT 1";
+	$result2 = mysqli_query($conn, $sql2);
+	$row2 = mysqli_fetch_assoc($result2);
+	
+	$case = $row2 ['case'];
 
    // Displaying the latest values
         echo '<tr><td>', 
 			$date, '</td><td>', 
 			$heure_formatee, '</td><td>', 
-			$case_axes_x, '</td><td>', 
-			$case_axes_y, '</td><td>', 
+			$case, '</td><td>', 
 			$amplitude_capteur_1, '</td><td>',
 			$amplitude_capteur_2, '</td><td>',
 			$amplitude_capteur_3, '</tr>';
 }
 
 
-
-
-
-
-
-
-
-
+//Disconnecting from the database
+mysqli_close($conn);
 
 
 

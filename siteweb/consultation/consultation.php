@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style_login.css">
     <link rel="stylesheet" href="../styles/style_grid.css">
-	<title>Consuutation</title>
+	<title>Consultation</title>
   <meta charset="utf-8">
  </head>
  
