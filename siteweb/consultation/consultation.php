@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style_login.css">
 	<link rel="stylesheet" href="../styles/style_grid.css">
+	<link rel="stylesheet" href="../styles/bas_de_page.css">
+	<script src="actualisation.js"></script>
+
 	<title>Consultation</title>
  </head>
  
@@ -35,7 +38,7 @@ require '5_dern_val.php';
 
 
 ?>
-
+	</div>
  </section>
  
  

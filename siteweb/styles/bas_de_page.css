@@ -1,0 +1,30 @@
+
+footer 
+{
+	left: 0;
+	bottom: 0;
+	padding-bottom: 20px;
+	background-color: black;
+	color: white;
+	height : 10px;
+}
+footer ul li
+{
+	display: inline-block;
+	list-style-type: none;
+	padding: 0 10px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+footer ul li:first-child
+{
+	text-align: left;
+}
+
+footer ul li:last-child
+{
+	text-align: right;
+}
+
+

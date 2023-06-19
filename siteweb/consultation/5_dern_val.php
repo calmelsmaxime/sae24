@@ -53,46 +53,53 @@ $val5 = $row3['case'];
 
 
 //Boucle pour faire le graphique
-for ($i=1; $i<=16 ; $i++){
-	for ($j=1; $j<=16; $j++){
-		$position = "$i.$j";
-		
-		// Si c'est la dernière valeur
-		for ($p=1; $p<=$m; $p++){
-			if ($dern_position[$p] == $position  ){
 
-				echo '<div class="bloc_green">
-							</div>';
+for ($i = 1; $i <= 16 ;$i++) {
+
+    for ($j = 1; $j <= 16; $j++) {
+        $position = "$i.$j";
+        
+
+        // Vérifier si c'est la dernière valeur
+        $isLastPosition = false;
+        for ($p = 1; $p <= $m; $p++) {
+            if ($dern_position[$p] === $position) {
+                $isLastPosition = true;
+                break;
+            }
+        }
+        
+        // Vérifier si c'est la 5ème dernière valeur
+        $isFifthLastPosition = ($val5 === $position);
+        
+        // Vérifier si c'est l'une des 4 dernières valeurs
+		$isRecentPosition = false;
+		for ($g = 1; $g <= $f; $g++) {
+			if ($position_mil[$g] === $position) {
+				$isRecentPosition = true;
+				break;
 			}
 		}
+        
+        // Générer la div correspondante en fonction de la position
+        if ($isLastPosition) {
+            echo '<div class="bloc_green"></div>';
+        } elseif ($isFifthLastPosition) {
+            echo '<div class="bloc_red"></div>';
+        } elseif ($isRecentPosition) {
+            echo '<div class="bloc_orange"></div>';
+        } else {
+            echo '<div class="bloc"></div>';
+        }
+    }
 
-		// Si c'est la 5 ème dernière valeur
-		if ($val5 == $position ){
-			echo '<div class="bloc_red">
-					</div>';
-		}	
-
-		for ($g=1; $g<=$f; $g++){
-			if ($position_mil[$g] == $position  ){
-				echo $position_mil[$g];
-				echo '<div class="bloc_orange">
-							</div>';
-			}
-		}
-		
-	
-		
-		// Si il n'y a aucune valeur
-		echo '<div class="bloc"></div>';			
-	}
-		
-		
 }
+
 
 //Disconnecting from the database
 mysqli_close($conn);
 
 
 ?>
-	</div>
+
 

@@ -2,6 +2,8 @@
 <html lang="fr">
  <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/bas_de_page.css">
+
  </head>
  
  <body>
