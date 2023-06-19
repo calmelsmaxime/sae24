@@ -25,10 +25,10 @@ th {
     border-radius: 10px;
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
+td {
+	background-color: black;
+	color : white;
 }
-
 tr {
     border-radius: 10px;
 }
