@@ -1,47 +1,33 @@
 from math import *
 
-amplitude1 = 0.017777777777777778
-amplitude2 = 0.008888888888888887
-amplitude3 = 0.017777777777777778
-case1 = {'a':[], 'b':[],'c':[], 'd':[]}
-case2 = {'a':[], 'b':[],'c':[], 'd':[]}
-case3 = {'a':[], 'b':[],'c':[], 'd':[]}
-compteur1 = 0
-compteur2 = 0
-compteur3 = 0
+# Création des dictionnaires pour stocker les amplitudes
+ampli_micro1 = {}
+ampli_micro2 = {}
+ampli_micro3 = {}
 
-print ("----------------------------------------------------------------------------------------------------------Micro 1----------------------------------------------------------------------------------------------------------")
+# Choisissez combien de chiffres après la virgule vous souhaitez conserver
+num_decimal_places = 15
+
+# Constante pour le coefficient 
+const = 8.854187*10**-12
+
+# Calcul des amplitudes pour le micro 1
 for i in range (16):
     for j in range (16):
         a=(i*0.5)**2
         b=(j*0.5)**2
         dist=sqrt(a+b)
         if dist != 0 :
-            ampli=1/(dist**2)
+            ampli=const/(dist**2)
         else :
-            ampli = 0
-        if ampli==amplitude1 :
-            compteur1+=1
-            if compteur1 ==1:
-                case1['a'].append(i)
-                case1['a'].append(j)
-            elif compteur1 ==2:
-                case1['b'].append(i)
-                case1['b'].append(j)
-            elif compteur1 ==3:
-                case1['c'].append(i)
-                case1['c'].append(j)
-            elif compteur1 ==4:
-                case1['d'].append(i)
-                case1['d'].append(j)
-            else:
-                print ("Trop de cases correspondant à la même amplitude")
-print (case1)
+            ampli = 0.0
+        # Conversion de l'amplitude en entier long en déplaçant la virgule décimale
+        ampli_long = int(ampli * (10 ** num_decimal_places))
+        # Stockage de l'amplitude en format binaire dans le dictionnaire
+        ampli_micro1[(i, j)] = format(ampli_long, 'b')
 
 
-
-
-print ("----------------------------------------------------------------------------------------------------------Micro 2----------------------------------------------------------------------------------------------------------")
+# Calcul des amplitudes pour le micro 2
 for i in range (16):
     for j in range (16):
         y= abs(j-15)
@@ -49,32 +35,16 @@ for i in range (16):
         b=(y*0.5)**2
         dist=sqrt(a+b)
         if dist != 0 :
-            ampli=1/(dist**2)
+            ampli=const/(dist**2)
         else :
-            ampli = 0
-        if ampli==amplitude2 :
-            compteur2+=1
-            if compteur2 ==1:
-                case2['a'].append(i)
-                case2['a'].append(j)
-            elif compteur2 ==2:
-                case2['b'].append(i)
-                case2['b'].append(j)
-            elif compteur2 ==3:
-                case2['c'].append(i)
-                case2['c'].append(j)
-            elif compteur2 ==4:
-                case2['d'].append(i)
-                case2['d'].append(j)
-            else:
-                print ("Trop de cases correspondant à la même amplitude")
-print (case2)
-       
+            ampli = 0.0
+        # Conversion de l'amplitude en entier long en déplaçant la virgule décimale
+        ampli_long = int(ampli * (10 ** num_decimal_places))
+        # Stockage de l'amplitude en format binaire dans le dictionnaire
+        ampli_micro2[(i, j)] = format(ampli_long, 'b')
 
 
-
-
-print ("----------------------------------------------------------------------------------------------------------Micro 3----------------------------------------------------------------------------------------------------------")
+# Calcul des amplitudes pour le micro 3
 for i in range (16):
     for j in range (16):
         x= abs(i-15)
@@ -83,30 +53,43 @@ for i in range (16):
         b=(y*0.5)**2
         dist=sqrt(a+b)
         if dist != 0 :
-            ampli=1/(dist**2)
+            ampli=const/(dist**2)
         else :
-            ampli = 0
-        if ampli==amplitude3 :
-            compteur3+=1
-            if compteur3 ==1:
-                case3['a'].append(i)
-                case3['a'].append(j)
-            elif compteur3 ==2:
-                case3['b'].append(i)
-                case3['b'].append(j)
-            elif compteur3 ==3:
-                case3['c'].append(i)
-                case3['c'].append(j)
-            elif compteur3 ==4:
-                case3['d'].append(i)
-                case3['d'].append(j)
-            else:
-                print ("Trop de cases correspondant à la même amplitude")
-print (case3)
+            ampli = 0.0
+        # Conversion de l'amplitude en entier long en déplaçant la virgule décimale
+        ampli_long = int(ampli * (10 ** num_decimal_places))
+        # Stockage de l'amplitude en format binaire dans le dictionnaire
+        ampli_micro3[(i, j)] = format(ampli_long, 'b')
 
-for clee1 in case1:
-    for clee2 in case2:
-        for clee3 in case3:
-            if case1[clee1]==case2[clee2]==case3[clee3] and case1[clee1]!= [] :
-                resultat=case1[clee1]
-                print ("La case où se situe l'objet est:",case1[clee1])
+# Vos amplitudes en binaire
+amplitude1_bin = "votre_amplitude1_en_binaire"
+amplitude2_bin = "votre_amplitude2_en_binaire"
+amplitude3_bin = "votre_amplitude3_en_binaire"
+
+# Dictionnaires pour stocker les cases correspondant à chaque amplitude
+case1 = []
+case2 = []
+case3 = []
+
+# Vérification des amplitudes pour chaque microphone
+for case, ampli_bin in ampli_micro1.items():
+    if ampli_bin == amplitude1_bin:
+        case1 = list(case)
+        break
+
+for case, ampli_bin in ampli_micro2.items():
+    if ampli_bin == amplitude2_bin:
+        case2 = list(case)
+        break
+
+for case, ampli_bin in ampli_micro3.items():
+    if ampli_bin == amplitude3_bin:
+        case3 = list(case)
+        break
+
+# Vérification que les trois cases sont identiques
+if case1 == case2 == case3:
+    print("La case où se situe l'objet est :", case1)
+else:
+    print("Aucune case commune trouvée pour les trois amplitudes")
+
