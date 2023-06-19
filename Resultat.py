@@ -62,34 +62,39 @@ for i in range (16):
         ampli_micro3[(i, j)] = format(ampli_long, 'b')
 
 # Vos amplitudes en binaire
-amplitude1_bin = "0"
-amplitude2_bin = "10011101"
-amplitude3_bin = "1001110"
+amplitude1_bin = "110111010"
+amplitude2_bin = "1000100000"
+amplitude3_bin = "11010000"
 
 # Dictionnaires pour stocker les cases correspondant à chaque amplitude
-case1 = []
-case2 = []
-case3 = []
+cases1 = []
+cases2 = []
+cases3 = []
 
 # Vérification des amplitudes pour chaque microphone
 for case, ampli_bin in ampli_micro1.items():
     if ampli_bin == amplitude1_bin:
-        case1 = list(case)
-        break
+        cases1.append(list(case))
 
 for case, ampli_bin in ampli_micro2.items():
     if ampli_bin == amplitude2_bin:
-        case2 = list(case)
-        break
+        cases2.append(list(case))
 
 for case, ampli_bin in ampli_micro3.items():
     if ampli_bin == amplitude3_bin:
-        case3 = list(case)
+        cases3.append(list(case))
+
+
+# Recherche d'une valeur commune aux trois listes de cases
+common_case = None
+for case1 in cases1:
+    if case1 in cases2 and case1 in cases3:
+        common_case = case1
         break
 
-# Vérification que les trois cases sont identiques
-if case1 == case2 == case3:
-    print("La case où se situe l'objet est :", case1)
+# Affichage du résultat
+if common_case:
+    print("La case où se situe l'objet est :", common_case)
 else:
     print("Aucune case commune trouvée pour les trois amplitudes")
 
