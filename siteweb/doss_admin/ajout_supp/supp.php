@@ -9,11 +9,11 @@
 
 $Date = $_POST['Date'];
 $horaire = $_POST['horaire'];
-require '../connexion_bd.php';
+require '../../connexion_bd.php';
 
-// Cherche id correspondant dans la table mesure
+// Cherche l'id correspondant dans la table mesure
 $sql = "SELECT * FROM mesures
-		WHERE date = $Date AND heure = $horaire ";
+		WHERE date = STR_TO_DATE('$Date', '%Y-%m-%d') AND heure = '$horaire' ";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
 $id = $row['id'];
@@ -34,7 +34,7 @@ mysqli_close($conn);
 
 // Check execution of the query
 if ($result3 &&$result2 ) {
-    echo "Le bâtiment a été ajouté avec succès.";
+    echo "La mesure à été supprimer avec succès.";
 } else {
     echo "Une erreur s'est produite lors de l'ajout du bâtiment : ";
 }

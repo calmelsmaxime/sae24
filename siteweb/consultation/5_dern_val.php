@@ -31,6 +31,15 @@ $sql = "SELECT DISTINCT id, `case` FROM resultat
 		ORDER BY id DESC
 		LIMIT 3 OFFSET 1";
 $result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_assoc($result);
+
+$f = 0;
+// Les stocks dans des variables
+while ($row) {
+    $f++;
+    $position_mil[$f] = $row['case'];
+	$row = mysqli_fetch_assoc($result); // Mettre à jour $row2 pour obtenir le prochain enregistrement
+}
 
 
 // Reqête pour trouver la 5ème dernière valeur
@@ -44,14 +53,14 @@ $val5 = $row3['case'];
 
 
 //Boucle pour faire le graphique
-for ($i=0; $i<16 ; $i++){
-	for ($j=0; $j<16; $j++){
-		
+for ($i=1; $i<=16 ; $i++){
+	for ($j=1; $j<=16; $j++){
 		$position = "$i.$j";
 		
 		// Si c'est la dernière valeur
 		for ($p=1; $p<=$m; $p++){
 			if ($dern_position[$p] == $position  ){
+
 				echo '<div class="bloc_green">
 							</div>';
 			}
@@ -63,14 +72,16 @@ for ($i=0; $i<16 ; $i++){
 					</div>';
 		}	
 
-		while ($row = mysqli_fetch_assoc($result)){
-			$position2 = $row['case'];
-			// Si c'est la 2,3 ou 4 ème dernière valeurs
-			if ($position2 == $position){
+		for ($g=1; $g<=$f; $g++){
+			if ($position_mil[$g] == $position  ){
+				echo $position_mil[$g];
 				echo '<div class="bloc_orange">
-						</div>';
-				}		
+							</div>';
+			}
 		}
+		
+	
+		
 		// Si il n'y a aucune valeur
 		echo '<div class="bloc"></div>';			
 	}
