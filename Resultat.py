@@ -62,9 +62,9 @@ for i in range (16):
         ampli_micro3[(i, j)] = format(ampli_long, 'b')
 
 # Vos amplitudes en binaire
-amplitude1_bin = "votre_amplitude1_en_binaire"
-amplitude2_bin = "votre_amplitude2_en_binaire"
-amplitude3_bin = "votre_amplitude3_en_binaire"
+amplitude1_bin = "0"
+amplitude2_bin = "10011101"
+amplitude3_bin = "1001110"
 
 # Dictionnaires pour stocker les cases correspondant à chaque amplitude
 case1 = []
