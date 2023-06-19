@@ -63,10 +63,10 @@ for i in range (16):
         ampli_micro3[(i, j)] = format(ampli_long, 'b')
 
 
-i = random.randint(0, 15)
-j = random.randint(0, 15)
+x = random.randint(0, 15)
+y = random.randint(0, 15)
 
-print(i , j)
+print(x , y)
 
 def deplacement(x, y):
     if 0 < x < 15 : 
@@ -94,8 +94,10 @@ def deplacement(x, y):
 
     return (x, y)
 
-tab = deplacement(i, j)
+tab = deplacement(x, y)
 print(tab)
+x, y = tab
+print(x, y)
 
 for case, ampli_bin in ampli_micro1.items():
     if case == tab:
