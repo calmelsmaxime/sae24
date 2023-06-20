@@ -84,7 +84,6 @@ for ($i = 15; $i >= 0 ;$i--) {
         // Générer la div correspondante en fonction de la position
         if ($isLastPosition) {
             echo '<div class="bloc_green"></div>';
-			echo $position;
         } elseif ($isFifthLastPosition) {
             echo '<div class="bloc_red"></div>';
         } elseif ($isRecentPosition) {

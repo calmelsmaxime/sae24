@@ -3,14 +3,16 @@ footer
 {
 	left: 0;
 	bottom: 0;
+	height:100%;
+	width: 100%;
 	padding-bottom: 20px;
 	background-color: black;
 	color: white;
-	height : 20px;
 }
 footer ul li
 {
 	display: inline-block;
+	width: 33%;
 	list-style-type: none;
 	padding: 0 10px;
 	box-sizing: border-box;
