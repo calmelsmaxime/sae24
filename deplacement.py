@@ -1,7 +1,7 @@
 from math import *
 from time import sleep
-import random
 import subprocess
+import random
 
 # Création des dictionnaires pour stocker les amplitudes
 ampli_micro1 = {}
@@ -130,6 +130,7 @@ print(x, y)
 print(amplisim1)
 print(amplisim2)
 print(amplisim3)
+subprocess.call(["bash", "mqtt_pub.sh", amplisim1, amplisim2, amplisim3])
 
 while True:
     sleep(5)
