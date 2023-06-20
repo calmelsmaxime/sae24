@@ -54,10 +54,10 @@ $val5 = $row3['case'];
 
 //Boucle pour faire le graphique
 
-for ($i = 1; $i <= 16 ;$i++) {
+for ($i = 15; $i >= 0 ;$i--) {
 
-    for ($j = 1; $j <= 16; $j++) {
-        $position = "$i.$j";
+    for ($j = 0; $j <= 15; $j++) {
+        $position = "$j.$i";
         
 
         // Vérifier si c'est la dernière valeur
@@ -84,6 +84,7 @@ for ($i = 1; $i <= 16 ;$i++) {
         // Générer la div correspondante en fonction de la position
         if ($isLastPosition) {
             echo '<div class="bloc_green"></div>';
+			echo $position;
         } elseif ($isFifthLastPosition) {
             echo '<div class="bloc_red"></div>';
         } elseif ($isRecentPosition) {
