@@ -14,7 +14,7 @@ $id_last = $row4['id'];
 
 // Reqête pour trouver la dernière valeur
 $sql2 = "SELECT * FROM resultat
-		WHERE id = $id_last";
+		WHERE id = '$id_last'";
 $result2 = mysqli_query($conn, $sql2);
 $row2 = mysqli_fetch_assoc($result2);
 
