@@ -76,7 +76,7 @@ while ($row = mysqli_fetch_assoc($result)){
 			$case, '</td><td>', 
 			$amplitude_capteur_1, '</td><td>',
 			$amplitude_capteur_2, '</td><td>',
-			$amplitude_capteur_3, '</tr>';
+			$amplitude_capteur_3, '</td></tr>';
 }
 
 

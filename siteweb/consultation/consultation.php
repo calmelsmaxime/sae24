@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style_login.css">
 	<link rel="stylesheet" href="../styles/style_grid.css">
-	<link rel="stylesheet" href="../styles/bas_de_page.css">
+	<link rel="stylesheet" href="../styles/tableau.css">
+		<link rel="stylesheet" href="../styles/footer2.css">
+
 	<script src="actualisation.js"></script>
 
 	<title>Consultation</title>
@@ -27,8 +29,8 @@
         </nav>
     </header>
   
-<section id="zero">
-<h1 id="titre_grille"> Affichage des 5 dernières mesures sous forme de graphique</h1>
+<section>
+<h1> Affichage des 5 dernières mesures retrouvées sous forme de graphique</h1>
 <div class="grid">
 
 
@@ -41,8 +43,29 @@ require '5_dern_val.php';
 	</div>
  </section>
  
+ <section>
+<h1> Affichage des 5 dernières mesures réel sous forme de tableau</h1>
+
+<table>
+	<caption> Tableau des 5 dernière valeurs</caption>
+        <tr>
+            <th>Date</th>
+            <th>Heure</th>
+			<th>Case</th>
+        </tr>
+
+
+<?php
+
+require 'val_tab.php';
+
+
+?>
+
+</table>
+ </section/>
  
- <footer>
+ <footer class = "white">
     <ul>
 	  <li>IUT de Blagnac</li>
 	  <li>Département Réseaux et Télécommunications</li>
