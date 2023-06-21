@@ -22,7 +22,7 @@
 		   <li><a href="../index.html" >Accueil</a></li>
 		   <li><a href="../consultation/consultation.php">Consultation</a></li>
 		   <li><a href="../gestion_de_projet.html"> Gestion du projet </a></li>
-		   <li><a href="#">Tableau récapitulatif</a></li>
+		   <li class="actif"><a href="#">Tableau récapitulatif</a></li>
 		   <li><a href="ajout_supp/ajout_supp.html">Ajout / Supression de valeur</a></li>
 
 				</ul>

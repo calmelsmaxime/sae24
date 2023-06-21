@@ -21,7 +21,7 @@
             <div class="nav-links">
 				<ul>
 				   <li><a href="../index.html" >Accueil</a></li>
-				   <li><a href="">Consultation</a></li>
+				   <li class="actif"><a href="">Consultation</a></li>
 				   <li><a href="../gestion_de_projet.html"> Gestion du projet </a></li>
 				   <li><a href="../doss_admin/page_admin.html">Administrateur</a></li>
 				   <li><a href="../mention_légale.html">Mention légale</a></li>
