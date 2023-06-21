@@ -2,6 +2,8 @@
 /*-----Formulaire-----*/
 
 
+
+
 .ajout_supp2 {
     background: rgba(255, 255, 255, .3);
 	width: 30%;
@@ -27,7 +29,6 @@
     transition: all .3s;
     margin-bottom: 20px;
     margin-top: 20px;
-
 }
 
 .ajout_supp2 select {
@@ -43,7 +44,6 @@
     margin-bottom: 20px;
     margin-top: 20px;
 }
-
 
 
 

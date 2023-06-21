@@ -71,7 +71,7 @@ require 'val_tab.php';
 </table>
  </section>
  
- <footer class = "white">
+ <footer class = "mention">
     <ul>
 	  <li>IUT de Blagnac</li>
 	  <li>Département Réseaux et Télécommunications</li>

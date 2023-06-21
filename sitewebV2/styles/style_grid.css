@@ -17,7 +17,8 @@
 
 .bloc {
     background-color: rgb(230, 230, 230);
-    border: 1px solid #7e7e7e;;
+    border: 1px solid #7e7e7e;
+    margin-top: 5px;
 
 }
 
