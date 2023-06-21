@@ -21,7 +21,7 @@
             <div class="nav-links">
 				<ul>
 				   <li><a href="../index.html" >Accueil</a></li>
-				   <li><a href="">Consultation</a></li>
+				   <li class="actif"><a href="">Consultation</a></li>
 				   <li><a href="../gestion_de_projet.html"> Gestion du projet </a></li>
 				   <li><a href="../doss_admin/page_admin.html">Administrateur</a></li>
 				   <li><a href="../mention_légale.html">Mention légale</a></li>
@@ -32,7 +32,7 @@
     </header>
   
 <section>
-<h1 class = "white"> Affichage des 5 dernières mesures retrouvées sous forme de graphique</h1>
+<h1 class="white"> Affichage des 5 dernières mesures estimées sous forme de graphique</h1>
 </section>
 
 <section>
@@ -48,7 +48,8 @@ require '5_dern_val.php';
  </section>
  
  <section>
-<h1> Affichage des 5 dernières mesures réel sous forme de tableau</h1>
+<h1 class="titretabl"> Affichage des 5 dernières mesures réelles sous forme de tableau</h1>
+<br>
 </section>
 
 <section>

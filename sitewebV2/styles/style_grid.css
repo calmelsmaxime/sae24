@@ -17,21 +17,22 @@
 
 .bloc {
     background-color: rgb(230, 230, 230);
-    border-radius: 10px;
+    border: 1px solid #7e7e7e;;
 
 }
 
 .bloc_red{
 	background-color: red;
-    border-radius: 25px;
+    border: 1px solid #7e7e7e;;
 }
 
 .bloc_green{
 	background-color: green;
-    border-radius: 25px;
+    border: 1px solid #7e7e7e;;
 }
 
 .bloc_orange{
 	background-color: orange;
-    border-radius: 25px;
+    border: 1px solid #7e7e7e;;
+
 }

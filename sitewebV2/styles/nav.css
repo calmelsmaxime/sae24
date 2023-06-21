@@ -42,6 +42,7 @@
 }
 
 .navbar .nav-links .actif a {
-    color: #6dd5ed;
-    font-weight: 900;
+    color: rgb(128, 36, 247);
+    font-weight: 600;
 }
+

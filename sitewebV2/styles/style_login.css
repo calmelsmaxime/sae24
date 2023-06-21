@@ -21,8 +21,6 @@ body {
 
 
 section {
-	padding-bottom: 50px;
-	padding-top: 50px;
     max-height: 100vh;
     display: flex;
     justify-content: center;
@@ -33,3 +31,4 @@ section {
 .white{
 	color : white;
 }
+

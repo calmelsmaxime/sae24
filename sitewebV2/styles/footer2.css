@@ -1,13 +1,12 @@
 footer{
-	left: 0;
-	bottom: 0;
-	height:100%;
+    left: 0;
 	width: 100%;
 	padding-bottom: 10px;
 	padding-top: 10px;
 	background-color: white;
 	color : black;
-	position : relative;
+    position:absolute;
+    bottom:0;  /* on le colle en bas */
 
 }
 
