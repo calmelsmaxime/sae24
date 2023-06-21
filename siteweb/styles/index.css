@@ -24,12 +24,16 @@ background-image: url(../img/blanc.jpg);
 section {
     font-family: "Poppins";
     margin-left: 2%;
-	margin-top: 2%;
-	margin-bottom: 2%;
-    display: flex;
+	margin-top: 4%;
+	margin-bottom: 4%;
     flex-direction: column;
     justify-content: center;
 }
+h2{
+	margin-top: 4%;
+	
+}
+
 
 .navbar {
     top: 0;
@@ -38,7 +42,6 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 
 
@@ -63,4 +66,12 @@ section {
     font-weight: 900;
 }
 
+.image{
+	margin-top: 2%;
+	max-width: 500px; 
+	height:auto; 
+	border-radius: 25% 10%;
+	clear: both; 
+	
+}
 
