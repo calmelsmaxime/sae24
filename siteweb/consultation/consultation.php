@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style_login.css">
 	<link rel="stylesheet" href="../styles/style_grid.css">
+	<link rel="stylesheet" href="../styles/footer2.css">
 	<link rel="stylesheet" href="../styles/tableau.css">
-		<link rel="stylesheet" href="../styles/footer2.css">
 
 	<script src="actualisation.js"></script>
 
@@ -63,7 +63,7 @@ require 'val_tab.php';
 ?>
 
 </table>
- </section/>
+ </section>
  
  <footer class = "white">
     <ul>
