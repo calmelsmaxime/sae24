@@ -34,6 +34,7 @@
   <section>
 <table>
 	<caption> Tableau récapitulatif </caption>
+	
         <tr>
             <th>Date</th>
             <th>Heure</th>

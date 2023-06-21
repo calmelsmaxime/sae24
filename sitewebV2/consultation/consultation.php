@@ -32,7 +32,7 @@
     </header>
   
 <section>
-<h1> Affichage des 5 dernières mesures retrouvées sous forme de graphique</h1>
+<h1 class = "white"> Affichage des 5 dernières mesures retrouvées sous forme de graphique</h1>
 </section>
 
 <section>

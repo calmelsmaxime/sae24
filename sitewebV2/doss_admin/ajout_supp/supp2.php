@@ -23,7 +23,7 @@
 				   <li><a href="../../consultation/consultation.php">Consultation</a></li>
 				   <li><a href="../../gestion_de_projet.html"> Gestion du projet </a></li>
 				   <li><a href="../tableau_récapitulatif.php">Tableau récapitulatif</a></li>
-				   <li><a href="">Ajout / Supression de valeur</a></li>
+				   <li><a href="ajout_supp.html">Ajout / Supression de valeur</a></li>
 
 				</ul>
 			</div>
@@ -34,29 +34,44 @@
   <section>
 
 	<form class="ajout_supp2"  action="supp.php" method="post">	
+	<label for="horaire">Choisissez son horaire : </label><br>
+			<select id="horaire" name="horaire"><br>
+	<?php
 	
-			<label for="Date">Choisissez la date : </label><br>
-			<input type="date" id="Date" name="Date"><br>
-			
-			<label for="horaire">Choisissez son horaire : </label><br>
-			<input type="time" id="horaire" name="horaire"><br>
-		
+	$date = $_POST['date'];
 
+	require '../../connexion_bd.php';
+	
+
+	// Recherche des heures
+	$sql2 = "SELECT horaire, date FROM mesures
+			WHERE date = '$date'
+			ORDER BY horaire DESC";
+	$result2 = mysqli_query($conn, $sql2);
+	
 			
+	while ($row2 = mysqli_fetch_assoc($result2)){
+		$heure = $row2['horaire'];
+		$heure_formatee = date("H:i:s", strtotime($heure));		
+		echo "<option value=$heure_formatee> $heure_formatee </option>";
+		
+	};
+	
+
+//Disconnecting from the database
+mysqli_close($conn);
+
+echo "</select><br>";
+echo "date";
+
+	
+	?>
+		
 			<input type="submit" value="Cliquez ici pour supprimer la valeur">
 		</form>
 
 
-
-
 </section>
 
-<footer>
-    <ul>
-	  <li>IUT de Blagnac</li>
-	  <li>Département Réseaux et Télécommunications</li>
-      <li>BUT1</li>
-	</ul>  
-  </footer>
-
 </body>
+</html>

@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="../../styles/formulaire2.css">
 	<link rel="stylesheet" href="../../styles/footer2.css">
 	<link rel="stylesheet" href="../../styles/nav.css">
-	
+
 
 	<title>Ajout ou suppression de valeur</title>
  </head>
@@ -33,25 +33,37 @@
   
   <section>
 
-	<form class="ajout_supp2" action="ajout.php" method="post">			
+	<form class="ajout_supp2"  action="supp2.php" method="post">	
+	<label for='date'>Choisissez la date : </label><br>
+			<select name="date" id="date"><br>
+	<?php
+	
+	require '../../connexion_bd.php';
+	
+	// Recherche les dates
+	$sql = "SELECT DISTINCT date FROM mesures
+			WHERE date = '$date'
+			ORDER BY date DESC";
+	$result = mysqli_query($conn, $sql);
+	
+	while ($row = mysqli_fetch_assoc($result)){
+		$date = $row ['date'];		
+		echo "<option value=$date> $date </option>";
+		
+	};
+	
+	
+//Disconnecting from the database
+mysqli_close($conn);
 
-			<label for="Date">Choisissez la date : </label><br>
-			<input type="date" id="Date" name="Date"><br>
-			
-			<label for="horaire">Choisissez son horaire : </label><br>
-			<input type="time" id="horaire" name="horaire"><br>
-			
-			<label for="val1">La valeur du capteur 1 </label><br>
-			<input type="number" id="val1" name="val1"><br>
-			
-			<label for="val2">La valeur du capteur 2 </label><br>
-			<input type="number" id="val2" name="val2"><br>
-			
-			<label for="val3">La valeur du capteur 2 </label><br>
-			<input type="number" id="val3" name="val3"><br>
-						
-			<input type="submit" value="Cliquez ici pour ajouter la mesure ">
-		</form>
+
+	
+	?>
+			</select><br>
+		<input type="submit" value="Cliquez ici pour choisir l'heure">
+	</form>
+
+
 
 
 </section>
