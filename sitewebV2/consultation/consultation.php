@@ -27,11 +27,12 @@
 				   <li><a href="../mention_légale.html">Mention légale</a></li>
                 </ul>
             </div>
+			 <a href="#" class="logo">SAE24 - Projet intégratif de S2</a>
         </nav>
     </header>
   
 <section>
-<h1> Affichage des 5 dernières mesures retrouvées sous forme de graphique</h1>
+<h1 class ="white"> Affichage des 5 dernières mesures retrouvées sous forme de graphique</h1>
 </section>
 
 <section>
@@ -47,7 +48,7 @@ require '5_dern_val.php';
  </section>
  
  <section>
-<h1> Affichage des 5 dernières mesures réel sous forme de tableau</h1>
+<h1 class ="white"> Affichage des 5 dernières mesures réel sous forme de tableau</h1>
 </section>
 
 <section>
@@ -69,7 +70,7 @@ require 'val_tab.php';
 </table>
  </section>
  
- <footer class = "white">
+ <footer>
     <ul>
 	  <li>IUT de Blagnac</li>
 	  <li>Département Réseaux et Télécommunications</li>

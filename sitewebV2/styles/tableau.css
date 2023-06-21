@@ -4,7 +4,9 @@
 table {
     border-spacing: 0 4px;
     border-collapse: separate;
-    width: 35%;
+	background-color:white;
+    width: 75%;
+	border-radius: 20px;
 }
 
 
@@ -13,6 +15,9 @@ caption {
     margin-top: 20px;
     color: #686868;
     font-size: 50px;
+	background-color:white;
+	border-radius: 20px;
+
 }
 
 
@@ -30,7 +35,8 @@ th {
 td {
     background-color: #eaeaea;
     color: #464646;
-    font-size: .95em;
+    font-size: 50 px;
+	height : 40px;
     text-align: center;
 }
 

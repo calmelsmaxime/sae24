@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style_login.css">
+    <link rel="stylesheet" href="../styles/style_login1.css">
 	<link rel="stylesheet" href="../styles/nav.css">
 	<link rel="stylesheet" href="../styles/tableau.css">
 	<link rel="stylesheet" href="../styles/footer2.css">
@@ -25,10 +25,12 @@
 		   <li><a href="#">Tableau récapitulatif</a></li>
 		   <li><a href="ajout_supp/ajout_supp.html">Ajout / Supression de valeur</a></li>
 
-    </ul>
-   </nav>
-  </header> 
-  
+				</ul>
+			</div>
+    <a href="#" class="logo">SAE24 - Projet intégratif de S2</a>
+        </nav>
+    </header>
+	
   <section>
 <table>
 	<caption> Tableau récapitulatif </caption>
@@ -95,13 +97,6 @@ mysqli_close($conn);
 
 </section>
 
-<footer>
-    <ul>
-	  <li>IUT de Blagnac</li>
-	  <li>Département Réseaux et Télécommunications</li>
-      <li>BUT1</li>
-	</ul>  
-  </footer>
 
 </body>
 </html>

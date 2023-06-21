@@ -1,13 +1,16 @@
-footer {
+footer{
 	left: 0;
 	bottom: 0;
 	height:100%;
 	width: 100%;
-    padding-top: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
 	background-color: black;
-	color: white;
+	color:white;
+	position : relative;
+
 }
+
 footer ul li
 {
 	display: inline-block;

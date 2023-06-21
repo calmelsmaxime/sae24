@@ -10,7 +10,7 @@
  
  <body>
 
-
+<section>
  <?php
 //Connecting to the database
 require '../connexion_bd.php';
@@ -30,7 +30,7 @@ if (mysqli_num_rows($result) == 1) {
 	header('Location:tableau_récapitulatif.php');
     exit();
 } else {
-    echo "Nom d'utilisateur ou mot de passe incorrect !";
+    echo "<p class='white'>Nom d'utilisateur ou mot de passe incorrect ! <p>";
 }
 
 //Disconnecting from the database
@@ -38,5 +38,6 @@ mysqli_close($conn);
 
 ?>
 
+</section>
 </body>
 </html>

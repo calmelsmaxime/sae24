@@ -14,7 +14,7 @@
 body {
     font-family: "Poppins";
     background-size: cover;
-    background-image: url(../img/ondez.jpg);
+    background-image: url(../img/fond.jpg);
     background-blend-mode: overlay;
     width: 100vw;
 }
@@ -28,6 +28,8 @@ section {
     justify-content: center;
     align-items: center;
     font-family: "Poppins";
+}
 
-
+.white{
+	color : white;
 }

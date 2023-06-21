@@ -1,6 +1,5 @@
 
 .navbar {
-    position: absolute;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.7); 
     padding: 40px;
@@ -8,8 +7,10 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    transition: background-color 0.5s ease; 
+    transition: background-color 0.5s ease;
 }
+
+
 
 .navbar:hover {
     background-color: rgba(0, 0, 0, 0.9); 
@@ -24,11 +25,12 @@
     color: #6dd5ed; 
 }
 
-
-.navbar .logo-image {
-    max-width: 60px;   /* Changez cette valeur en fonction de la taille souhaitée */
-    height: auto;
+.navbar .logo {
+    font-size: 1.7em;
+    letter-spacing: 1.25px;
+    font-weight: bolder;
 }
+
 
 .navbar .nav-links ul {
     display: flex;
