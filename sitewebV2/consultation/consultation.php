@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style_login.css">
+	<link rel="stylesheet" href="../styles/nav.css">
 	<link rel="stylesheet" href="../styles/style_grid.css">
 	<link rel="stylesheet" href="../styles/footer2.css">
 	<link rel="stylesheet" href="../styles/tableau.css">
@@ -31,8 +32,10 @@
   
 <section>
 <h1> Affichage des 5 dernières mesures retrouvées sous forme de graphique</h1>
-<div class="grid">
+</section>
 
+<section>
+<div class="grid">
 
 <?php
 
@@ -45,9 +48,10 @@ require '5_dern_val.php';
  
  <section>
 <h1> Affichage des 5 dernières mesures réel sous forme de tableau</h1>
+</section>
 
+<section>
 <table>
-	<caption> Tableau des 5 dernière valeurs</caption>
         <tr>
             <th>Date</th>
             <th>Heure</th>

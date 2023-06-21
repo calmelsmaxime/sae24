@@ -46,9 +46,10 @@
 
 
 .ajout_supp {
-    position: relative;
+
     background: rgba(255, 255, 255, .3);
-	width: 30%;
+	width: 35%;
+	height: 30%;
     border-radius: 20px;
     border-left: 1px solid rgba(255, 255, 255, .3);
     border-top: rgba(255, 255, 255, .3);
@@ -68,12 +69,14 @@
     color: rgb(255, 0, 0);
     transition: all .3s;
     margin-bottom: 20px;
+
 }
 
 .ajout_aj {
-    position: relative;
+
     background: rgba(255, 255, 255, .3);
-	width: 30%;
+	width: 35%;
+	height: 30%;
     border-radius: 20px;
     border-left: 1px solid rgba(255, 255, 255, .3);
     border-top: rgba(255, 255, 255, .3);
@@ -93,6 +96,7 @@
     color: rgb(255, 0, 0);
     transition: all .3s;
     margin-bottom: 20px;
+	
 }
 
 input:hover {
@@ -115,7 +119,8 @@ input[type="submit"] {
 
 .ajout_supp input[type="submit"] {
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 15px;
+	margin-bottom: 15px;
     font-weight: 900;
     max-width: 90%;
     align-items: center;
@@ -125,7 +130,8 @@ input[type="submit"] {
 
 .ajout_aj input[type="submit"] {
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 15px;
+	margin-bottom: 15px;
     font-weight: 900;
     max-width: 90%;
     align-items: center;

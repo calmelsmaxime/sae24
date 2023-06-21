@@ -35,37 +35,6 @@ h2{
 }
 
 
-.navbar {
-    top: 0;
-    left: 0;
-    padding: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.navbar .logo {
-    font-size: 1.7em;
-    letter-spacing: 1.25px;
-    font-weight: bolder;
-}
-
-.navbar .nav-links ul {
-    display: flex;
-}
-
-.navbar .nav-links li {
-    margin: 0 30px;
-    letter-spacing: 1.25px;
-}
-
-
-.navbar .nav-links .actif a {
-    color: rgb(140, 0, 255);
-    font-weight: 900;
-}
-
 .image{
 	margin-top: 2%;
 	max-width: 500px; 
