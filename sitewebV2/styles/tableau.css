@@ -10,11 +10,11 @@ table {
 }
 
 
-caption {
+.titretabl {
     text-align: center;
     margin-top: 20px;
     color: #686868;
-    font-size: 50px;
+    font-size: 25px;
 	background-color:white;
 	border-radius: 20px;
 

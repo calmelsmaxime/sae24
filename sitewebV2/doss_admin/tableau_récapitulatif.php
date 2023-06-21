@@ -32,8 +32,11 @@
     </header>
 	
   <section>
-<table>
-	<caption> Tableau récapitulatif </caption>
+  <h1 class="titretabl"> Tableau récapitulatif </h1>
+  <br>
+</section>
+<section>
+  <table>
         <tr>
             <th>Date</th>
             <th>Heure</th>
