@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(../police/Poppins-Medium.ttf);
+}
+
+
+#titre_grille {
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(16, 35px);
+    grid-template-rows: repeat(16, 35px);
+}
+
+.bloc {
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+
+}
+
+.bloc_red{
+	background-color: red;
+    border-radius: 25px;
+}
+
+.bloc_green{
+	background-color: green;
+    border-radius: 25px;
+}
+
+.bloc_orange{
+	background-color: orange;
+    border-radius: 25px;
+}

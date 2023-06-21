@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(../police/Poppins-Medium.ttf);
+}
+
+
+/*Pour éviter que les navigateurs imposent leur propre marge*/
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    /*la largeur et la hauteur des éléments sont calculées en prenant en compte le contenu, les bordures et les marges.*/
+}
+
+body {
+    font-family: "Poppins";
+    background-size: cover;
+background-image: url(../img/fond.jpg);
+    width: 100vw;
+
+}
+
+p, div, h1{
+color: white;
+}
+
+
+.navbar {
+    position: absolute;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 1.7em;
+    letter-spacing: 1.25px;
+    font-weight: bolder;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 30px;
+    letter-spacing: 1.25px;
+}
+
+
+.navbar .nav-links .actif a {
+    color: rgb(140, 0, 255);
+    font-weight: 900;
+}
+
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+
+
+}
+

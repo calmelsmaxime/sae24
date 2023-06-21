@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(../police/Poppins-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins";
+    background-size: cover;
+    background-image: url(../img/ondez.jpg);
+    background-blend-mode: overlay;
+    width: 100vw;
+}
+
+.navbar {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    transition: background-color 0.5s ease; 
+}
+
+.navbar:hover {
+    background-color: rgba(0, 0, 0, 0.9); 
+}
+
+.navbar a {
+    color: white;
+    transition: color 0.5s ease; 
+}
+
+.navbar a:hover {
+    color: #6dd5ed; 
+}
+
+
+.navbar .logo-image {
+    max-width: 60px;   /* Changez cette valeur en fonction de la taille souhaitée */
+    height: auto;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 30px;
+    letter-spacing: 1.25px;
+}
+
+.navbar .nav-links .actif a {
+    color: #6dd5ed;
+    font-weight: 900;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+
+
+}
