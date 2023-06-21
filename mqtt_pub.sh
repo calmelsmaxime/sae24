@@ -3,5 +3,5 @@ a2=$2
 a3=$3
 
 
+mosquitto_pub -h 192.168.1.15 -u g34 -t amplitude -m "{\"ampli1\" : $a1 , \"ampli2\" : $a2 , \"ampli3\" : $a3}"
 
-mosquitto_pub -h localhost -p 1883 -u sae24g34 -P passroot -t E102/amplisim -m "{\"ampli1\" : $a1 , \"ampli2\" : $a2 , \"ampli3\" : $a3}"
