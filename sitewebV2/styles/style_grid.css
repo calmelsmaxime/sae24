@@ -23,16 +23,71 @@
 
 .bloc_red{
 	background-color: red;
-    border: 1px solid #7e7e7e;;
+    border: 1px solid #7e7e7e;
 }
 
 .bloc_green{
 	background-color: green;
-    border: 1px solid #7e7e7e;;
+    border: 1px solid #7e7e7e;
 }
 
 .bloc_orange{
 	background-color: orange;
-    border: 1px solid #7e7e7e;;
+    border: 1px solid #7e7e7e;
 
+}
+
+.bloc_bleu{
+	background-color: blue;
+    border: 1px solid #7e7e7e;
+
+}
+
+.bloc_jaune{
+	background-color: #FFFF00;
+    border: 1px solid #7e7e7e;
+
+}
+
+.rouge{
+    text-align: center;
+	padding : 10px;
+    color: white;
+	background-color:red;
+	border-radius: 20px;
+}
+
+.orange{
+	text-align: center;
+	padding : 10px;
+    color: white;
+	background-color:orange;
+	border-radius: 20px;
+}
+
+.jaune{
+	text-align: center;
+	padding : 10px;
+	background-color:#FFFF00;
+	border-radius: 20px;
+}
+
+.bleu{
+	text-align: center;
+	padding : 10px;
+    color: white;
+	background-color:blue;
+	border-radius: 20px;
+}
+
+.vert{
+		text-align: center;
+	padding : 10px;
+    color: white;
+	background-color:green;
+	border-radius: 20px;
+}
+
+.top{
+	margin-top: 20px;
 }

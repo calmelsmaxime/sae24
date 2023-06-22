@@ -28,7 +28,9 @@ $result5 = mysqli_query($conn, $sql5);
 
 // Check execution of the query
 if ($result5) {
-    echo "La mesure a été ajouté avec succès.";
+    $message3 = "La donnée à bien été supprimé";
+	header("Location: ajout_supp.php?message3=" . urlencode($message3));
+	exit;
 } else {
     echo "Une erreur s'est produite lors de l'ajout de la mesure : " . mysqli_error($conn);
 }

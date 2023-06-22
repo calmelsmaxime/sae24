@@ -38,7 +38,10 @@ mysqli_close($conn);
 
 // Check execution of the query
 if ($result3 &&$result2 ) {
-    echo "La dernière donnée à été ajouté avec succès.";
+	$message = "La dernière donnée à bien été supprimé";
+	header("Location: ajout_supp.php?message=" . urlencode($message));
+	exit;
+	
 } else {
     echo "Une erreur s'est produite lors de la suppression de la dernière donnée ";
 }

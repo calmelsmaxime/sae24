@@ -46,9 +46,31 @@
 		</form>
 &ensp;
 
-
-
 </section>
+
+
+<section>
+<?php 
+
+if (isset($_GET['message'])) {
+    $message = $_GET['message'];
+    echo "<script>alert('" . htmlspecialchars($message) . "');</script>";
+}
+
+if (isset($_GET['message2'])) {
+    $message2 = $_GET['message2'];
+    echo "<script>alert('" . htmlspecialchars($message2) . "');</script>";
+}
+
+if (isset($_GET['message3'])) {
+    $message2 = $_GET['message3'];
+    echo "<script>alert('" . htmlspecialchars($message3) . "');</script>";
+}
+
+
+?>
+</section>
+
 
 <footer>
     <ul>

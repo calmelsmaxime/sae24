@@ -47,13 +47,40 @@ require '5_dern_val.php';
 	</div>
  </section>
  
-<br>
-<br>
+ <section class ="top"> 
+<section> 
+ <p class = "vert" > Couleur de la dernière valeur</p>
+
+ </section>
+ 
+ <section>
+ <p class = "bleu" > Couleur de l'avant dernière valeur</p>
+
+ </section>
+ 
+ <section>
+  <p class = "jaune" >Couleur de la valeur avant la dernière valeur</p>
+
+ </section>
+ 
+ <section>
+ <p class = "orange"> Couleur de la valeur d'après</p>
+
+ </section>
+ 
+ <section>
+ <p class = "rouge"> Valeur qui vas être supprimer en suivant</p>
+
+ </section>
+  </section>
+
+ 
 <br>
 
  <section>
 <h1 class="titretabl"> Affichage des 5 dernières mesures réelles sous forme de tableau</h1>
 <br>
+
 </section>
 
 <section>

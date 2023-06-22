@@ -38,7 +38,9 @@ mysqli_close($conn);
 
 // Check execution of the query
 if ($result3 &&$result2 ) {
-    echo "La mesure à été supprimer avec succès.";
+	$message2 = "La donnée à bien été supprimé";
+	header("Location: ajout_supp.php?message2=" . urlencode($message2));
+	exit;
 } else {
     echo "Une erreur s'est produite lors de la suppression de la mesure ";
 }

@@ -1,7 +1,7 @@
 function actualisationAutomatique() {
    setTimeout(function() {
       location.reload();
-   }, 1000); // 100 millisecondes = 1 secondes
+   }, 2000); // 2000 millisecondes = 2 secondes
 }
 
 actualisationAutomatique();
