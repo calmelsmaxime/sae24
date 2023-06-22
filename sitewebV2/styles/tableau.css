@@ -14,6 +14,7 @@ table {
 .titretabl {
     text-align: center;
     margin-top: 20px;
+	padding : 10px;
     color: #686868;
     font-size: 25px;
 	background-color:white;

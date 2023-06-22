@@ -38,6 +38,14 @@ h2{
 	
 }
 
+.tete{
+    border-radius: 20px;
+	margin-top : 20px;
+	max-width : 90%;
+	max-height : 90%;
+	
+}
+
 /*paragraphe d'accueil*/
 
 #intro {
