@@ -125,22 +125,24 @@ y = random.randint(0, 15)
 amplisim1 = ampli_micro1[(x, y)]
 amplisim2 = ampli_micro2[(x, y)]
 amplisim3 = ampli_micro3[(x, y)]
-case = (x, y)
+xd = str(x)
+yd = str(y)
 
-print(case)
+print(x, y)
 print(amplisim1)
 print(amplisim2)
 print(amplisim3)
-subprocess.call(["bash", "mqtt_pub.sh", amplisim1, amplisim2, amplisim3, case])
+subprocess.call(["bash", "mqtt_pub.sh", amplisim1, amplisim2, amplisim3, xd, yd])
 
 while True:
     sleep(5)
     tab = deplacement(x, y)
     x, y, amplisim1, amplisim2, amplisim3 = tab
 
-    case = (x, y)
-    print(case)
+    xr = str(x)
+    yr = str(y)
+    
     print(amplisim1)
     print(amplisim2)
     print(amplisim3)
-    subprocess.call(["bash", "mqtt_pub.sh", amplisim1, amplisim2, amplisim3, case])
+    subprocess.call(["bash", "mqtt_pub.sh", amplisim1, amplisim2, amplisim3, xr, yr])
