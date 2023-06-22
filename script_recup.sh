@@ -3,7 +3,7 @@
 # Informations de connexion à la base de données MySQL
 host=lhcp3349.webapps.net
 user=iv5g2mc0_adminsae24
-password=Motdepasse31!
+password=Motdepasse24!
 port=3306
 database=iv5g2mc0_sae24
 
@@ -16,14 +16,14 @@ on_message() {
     ampli1=$(echo "$payload" | jq -r '.ampli1')
     ampli2=$(echo "$payload" | jq -r '.ampli2')
     ampli3=$(echo "$payload" | jq -r '.ampli3')
-    case_val=$(echo "$payload" | jq -r '.case')
+    case_valeur=$(echo "$payload" | jq -r '.case')
 
     # Récupération de l'heure et la date actuelles
     horaire=$(date +"%H:%M:%S")
     date=$(date +"%d/%m/%Y")
 
     # Insertion des données dans la base de données
-    query="INSERT INTO MESURES (date, heure, valeur_c1, valeur_c2, valeur_c3, case) VALUES ('$date', '$horaire', '$ampli1', '$ampli2', '$ampli3', '$case_val')"
+    query="INSERT INTO MESURES (date, heure, valeur_c1, valeur_c2, valeur_c3, case_val) VALUES ('$date', '$horaire', '$ampli1', '$ampli2', '$ampli3', '$case_valeur')"
     mysql -h "$host" -u "$user" -p"$password" -P "$port" -D "$database" -e "$query"
 }
 
