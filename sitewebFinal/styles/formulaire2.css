@@ -1,0 +1,68 @@
+
+/*-----Formulaire-----*/
+
+
+
+
+.ajout_supp2 {
+    background: rgba(255, 255, 255, .3);
+	width: 30%;
+	padding-top:15px;
+    border-radius: 20px;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    border-top: rgba(255, 255, 255, .3);
+    box-shadow: 20px 20px 35px -6px rgba(0, 0, 0, .2);
+    text-align: center;
+	margin-top:40px;
+	margin-bottom: 40px;
+
+}
+
+
+.ajout_supp2 input {
+    background: transparent;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    box-shadow: 3px 3px 50px rgba(0, 0, 0, .2);
+    border-radius: 40px;
+    padding: 1rem;
+    color: rgb(0, 0, 0);
+    transition: all .3s;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.ajout_supp2 select {
+    background: transparent;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    box-shadow: 3px 3px 50px rgba(0, 0, 0, .2);
+    border-radius: 40px;
+    padding: 1rem;
+    color: rgb(0, 0, 0);
+    transition: all .3s;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+
+input:hover {
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, .2);
+}
+
+.container .erreur:hover {
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    max-width: 90%;
+    align-items: center;
+
+}

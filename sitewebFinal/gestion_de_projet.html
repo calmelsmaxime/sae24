@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+	<link rel="stylesheet" href="styles/nav.css">
+	<link rel="stylesheet" href="styles/bas_de_page.css">
+
+	<title>Gestion du projet</title>
+  <meta charset="utf-8">
+ </head>
+ 
+ <body>
+   <header>
+        <nav class="navbar">
+            <div class="nav-links">
+				<ul>
+		   <li><a href="index.html" >Accueil</a></li>
+		   <li><a href="consultation/consultation.php">Consultation</a></li>
+		   <li><a href=""> Gestion du projet </a></li>
+		   <li><a href="doss_admin/page_admin.html">Administrateur</a></li>
+		   <li><a href="mention_légale.html">Mention légale</a></li>
+
+				</ul>
+			</div>
+		 <a href="#" class="logo">SAE24 - Projet intégratif de S2</a>
+        </nav>
+    </header>
+  
+ <section id="intro">
+	<p>Bienvenue sur la page de gestion de projet ! Cette section regroupe toutes les informations essentielles relatives à notre projet, depuis sa planification jusqu'à son aboutissement. Vous trouverez ici un aperçu détaillé du GANTT final, qui offre une vision claire de l'évolution des différentes tâches et de leur interdépendance. De plus, nous avons inclus des captures d'écran des outils collaboratifs que nous avons utilisés tout au long du projet, afin de vous donner un aperçu concret de notre processus de travail. Chaque membre de notre équipe a également partagé une synthèse personnelle de son travail précis réalisé, mettant en évidence les réussites et les défis rencontrés. Nous avons identifié les problèmes auxquels nous avons été confrontés et proposé des solutions pour les résoudre efficacement. Enfin, vous trouverez une conclusion qui évalue le degré de satisfaction du cahier des charges. Nous espérons que cette page vous permettra de mieux comprendre notre projet et les étapes clés de sa réalisation.</p> 
+</section>   
+ <section id="intro">
+	<h2 id='gantt'><a href='#gantt'>Diagramme de Gantt prévisionnel</a></h2>
+	<p>Le diagramme de Gantt permet d'organiser un planning pour réaliser le projet petit à petit en planifiant des tâches à faire en un certain intervalle de temps. Voici notre diagramme de Gantt prévisionnel de notre projet réalisé sur le logiciel <a href='https://ganttproject.fr.softonic.com/telecharger' target='_blank'>GanttProject</a> :</p>
+	<img src='./img/gantt1.png' alt='Diagramme de Gantt'>
+	<img src='./img/gantt2.PNG' alt='Diagramme de Gantt'>
+</section>  
+<section id="intro">
+	<h2 id='perso'><a href='#perso'>Synthèse personnelle de chaque membre</a></h2> 
+</section>
+
+<section id="zero">
+	<div class="grid">
+		<div class="blocg">
+			<h3 id="Simon"><a href="#Simon">Simon CATHALA</a></h3>
+			<ul>
+				<li>&#8250; Création de certaines pages web</li>
+				<li>&#8250; Création du style des pages</li>
+				<li>&#8250; Création des différents scripts Python </li>
+				<li>&#8250; Création des différents diagrammes de Gantt</li>
+				<li>&#8250; Rédaction de la page Gestion de projet</li>
+				<li>&#8250; Rédaction du README sur Github</li>	
+				<li>&#8250; Modification de la base de données adaptée aux scripts Python</li>							
+				<li>&#8250; Aide à la réalisation de certains scripts PHP</li>
+			</ul>
+			<h4>Temps passé sur le projet : 48h</h4>
+			<h4>Moyenne des notes sur 5 données par les autres membres du groupe : 5/5 </h4>
+		</div>
+		<div class="blocg">
+			<h3 id="Maxime"><a href="#Maxime">CALMELS Maxime</a></h3>
+			<ul>
+				<li>&#8250; Création de certaines pages web et des formulaires</li>
+				<li>&#8250; Rédaction du contenu de la page d'accueil</li>
+				<li>&#8250; Création du repository Github</li>
+				<li>&#8250; Aide au style des pages</li>
+				<li>&#8250; Création des scripts PHP et d'un script JavaScript</li>
+				<li>&#8250; Aide à la connection des scripts Python à la base de donnée</li>
+				<li>&#8250; Aide à la création du diaporama</li>
+				<li>&#8250; Aide à la création de la base de donnée.</li>
+			</ul>
+			<h4>Temps passé sur le projet : 48h</h4>
+			<h4>Moyenne des notes sur 5 données par les autres membres du groupe : 5/5 </h4>
+		</div>
+		<div class="blocg">               
+			<h3 id="Clement"><a href="#Clement">Clément BARREDA</a></h3>
+			<ul>
+				<li>&#8250; Création de la BD (schéma, conception des requêtes, implémentation)</li>
+				<li>&#8250; Hébergement de la base</li>
+				<li>&#8250; Création du script de récupération de données depuis le broker et formatage de ces dernières dans un format compatible avec la base</li>
+				<li>&#8250; Création et mise en place du broker (avec Sylvio)</li>
+				<li>&#8250; Mise en place sur l'hébergeur (amen.fr)</li>
+				<li>&#8250; Aide à Maxime et Simon au sujet de la relation site/base</li>
+				</ul>
+				<h4>Temps passé sur le projet : 18h</h4>
+				<h4>Moyenne des notes sur 5 données par les autres membres du groupe : 4,3/5</h4>
+		</div>
+		<div class="blocg">
+			<h3 id="Sylvio"><a href="#Sylvio">GASPAROTTO Sylvio</a></h3>
+			<ul>
+				<li>&#8250; Début du script Python de simulation du déplacement </li>
+				<li>&#8250; Création du broker mqtt</li>
+				<li>&#8250; Paramétrage du broker mqtt</li>
+				<li>&#8250; Script de publication mqtt</li>
+				<li>&#8250; Configuration de la crontab sur le RaspberryPi</li>
+				<li>&#8250; Configuration de la crontab sur la machine virtuelle</li>
+			</ul>
+			<h4>Temps passé sur le projet : 19h</h4>
+			<h4>Moyenne des notes sur 5 données par les autres membres du groupe : 4,6/5</h4>
+
+		</div>
+		<div class="blocg">
+			<h3 id="Ernest"><a href="#Ernest">NSIMA Ernest</a></h3>
+			<ul>
+				<li>&#8250; Installation du Raspberry Pi 3 </li>
+				<li>&#8250; Mise en place de VNC</li>
+				<li>&#8250; Rédaction de la présentation des choix techniques</li>
+				<li>&#8250; Aide à la création du broker mqtt</li>
+				<li>&#8250; Aide au style des pages</li>
+				<li>&#8250; Création du diaporama</li>
+			</ul>
+			<h4>Temps passé sur le projet : 24h</h4>
+			<h4>Moyenne des notes sur 5 données par les autres membres du groupe : 4,1/5</h4>
+		</div>
+	</div>
+</section>
+
+<section id="intro">
+	<h2 id='github'><a href='#github'>Outils collaboratifs utilisés</a></h2> 
+	<p>Parmi les nombreux outils collaboratifs que nous avons utilisés tout au long du projet, <a href='https://github.com/' target='_blank'>GitHub</a> a joué un rôle central dans notre gestion de projet. GitHub est une plateforme de développement logiciel basée sur le système de contrôle de version Git. Cet outil puissant nous a permis de collaborer efficacement en fournissant un environnement centralisé pour le partage, la gestion et la collaboration sur notre code source. Voici <a href='https://github.com/calmelsmaxime/sae24.git' target='_blank'>notre repository GitHub</a> pour ce projet :</p>
+	<img src='./img/github.PNG' alt='Repository GitHub'>
+	<p> Grâce à GitHub, nous avons pu créer un référentiel centralisé pour notre code source, offrant ainsi un espace commun où chaque membre de l'équipe pouvait partager et travailler sur les fichiers du projet. Cette approche nous a permis de travailler simultanément sur les mêmes fichiers, tout en évitant les conflits de fusion. Les fonctionnalités de GitHub nous ont été particulièrement utile, nous permettant de résoudre les problèmes rencontrés tout au long du projet de manière collaborative. De plus, GitHub a facilité la revue de code en permettant des commentaires spécifiques sur les modifications apportées, ce qui a grandement amélioré notre processus d'examen et de validation. En résumé, grâce à GitHub, nous avons pu bénéficier d'une collaboration fluide, d'une gestion efficace des problèmes et d'un suivi précis des modifications, contribuant ainsi à la réussite globale de notre projet.</p>
+</section>
+ <section id="intro">
+	<h2 id='bd'><a href='#bd'>Schéma de la Base de donnée</a></h2> 
+		<p>La base de donnée (BD) utilisée pour cette SAE est une <strong> base MySQL </strong> avec trois tables différentes, ces tables sont : </p>
+		&ensp;
+		<p> - Une table <strong>administration</strong> qui permet la gestion du ou des administrateur(s) avec une colonne login et une colonne mdp.   </p>
+		<p> - Une table <strong>mesures</strong> dans laquelle on stocke toutes les amplitudes des 3 capteurs et la case réelle envoyée par le broker ainsi que la date et l'heure, avec cela on a ajouté un id qui est une <strong>clé primaire</strong> ainsi qu'une colonne processed pour vérifier si la valeur a été traitée par notre script. </p>
+		<p> - Une table <strong>resultat</strong> dans laquelle on stocke la case calculée pour les 3 capteurs avec un id qui est une <strong>clé étrangère</strong> et qui permet de relier les deux tables mesures et résultat. </p>
+ 	<br>
+	<h3 > Image de la Base de donnée </h3>
+	<p> Voici ci-dessous l'image de la Base de donnée dans <strong>PhpMyAdmin</strong> </p>
+		<img class="imagebd" alt="SchemaBD" src="img/SchemaBD.png">
+ </section>
+ 
+ <section id="intro">
+	<h2 id='fina'><a href='#fina'>Diagramme de Gantt final</a></h2> 
+		<p>Voici ci-dessous le diagramme de Gantt final de notre projet :</p>
+		<img src='./img/ganttf1.PNG' alt='Diagramme de Gantt'>
+		<img src='./img/ganttf2.PNG' alt='Diagramme de Gantt'>
+ <p>Notre GANTT final diffère légèrement de notre GANTT prévisionnel initial. En effet, au cours du projet, nous avons dû faire face à des circonstances imprévues qui ont nécessité une répartition différente des tâches au sein du groupe. De plus, quelques problèmes sont survenus, ajoutant des défis supplémentaires à notre planning. Malgré ces ajustements, nous sommes fiers de mentionner que nous avons réussi à respecter dans l'ensemble notre GANTT initial. Nous avons travaillé avec diligence et discipline, que ce soit en autonomie chez nous ou lors de nos séances de travail à l'IUT durant les séances de SAE.</p>
+ </section>
+ 
+ <section id="intro">
+	<h2 id='prob'><a href='#prob'>Problèmes rencontrés</a></h2> 
+	<p>Clément : Impossible de récupérer les données depuis le broker (erreur parse) et mauvais type de données pour les amplitudes dans la base</p>
+	<p>Simon : Lors du déplacement, l'objet revenait sur les cases précédentes, ce qui superposait les points. Au moment de retrouver la case, plusieurs cases étaient associées à une même amplitude ce qui faussait le test. La base de donnée ne correspondait pas exactement aux scripts.</p>
+	<p>Maxime : Lors de l'affichage des données dans la grille dans la page consultation, le script a été compliqué à mettre en place. Le CSS a été un peu compliqué à mettre en place, car  nous avons beaucoup de fichiers différents.  </p>
+	<p>Sylvio : Mosquitto service ne se lançait pas au démarrage. Il fallait un bon format pour les cases dans le broker mqtt.</p>
+	<p>Ernest : Lors de l'utilisation de VNC, nous avons rencontré quelques problèmes. Après un redémarrage du Raspberry Pi, nous avons constaté que l'écran ne s'affichait plus sur le PC.Et quand nous nous sommes connectés via VNC, l'écran était excessivement zoomé, rendant le travail sur le Raspberry Pi quasiment impossible.</p>
+	<p><strong>Nous avons rencontré plusieurs défis au cours de notre projet, que ce soit au niveau du style et des différents scripts mais aussi au niveau de la mise en place d'un broker mqtt et de la configuration du Raspberry Pi.</strong></p>
+
+ </section>
+ 
+ <section id="intro">
+	<h2 id='sol'><a href='#sol'>Solutions apportées</a></h2> 
+	<p>Clément : Problème de formatage du message sur le topic ("case" : 5 . 2), il fallait retirer les espaces entre les chiffres. Une fois résolu le broker fonctionne et le script peut récupérer et envoyer les données sur la base</p>
+	<p>Simon : Ajout d'une liste des 4 dernières cases et d'une condition pour que le déplacement ne s'effectue pas dessus. Changement de la manière de tester les amplitudes, en parcourant chaque case dans les 3 dictionnaires. Changement du nom de la colonne case en "case_value" et création d'une colonne "processed" pour vérifier si la valeur a été traitée par notre script.</p>
+	<p>Maxime : J'ai pris du temps pour bien comprendre et pour me documenter, notamment dans le cours pour savoir comment faire. J'ai synthétisé au maximum pour mieux comprendre. </p>
+	<p>Sylvio : Lancement de mosquitto service dans la crontab au démarrage. Problème de formatage du message sur le topic, il fallait retirer les espaces entre les chiffres.</p>
+	<p>Ernest : Pour résoudre ces problèmes, nous avons dû modifier le fichier de configuration du Raspberry Pi.  Après avoir enregistré et fermé le fichier, nous avons redémarré le Raspberry Pi. Suite à ces modifications, l'affichage est revenu à la normale, et le problème de zoom sur VNC a également été résolu. 
+		</p>
+	<p><strong>Au cours de notre projet, nous avons été confrontés à divers problèmes, mais nous avons su trouver des solutions efficaces pour les résoudre. Pour améliorer l'apparence et la mise en page, nous avons utilisé des outils de développement tels que l'inspecteur de navigateur et ajusté les styles des éléments problématiques.Nous avons consulté des ressources en ligne pour obtenir des explications détaillées sur nos problèmes spécifiques. En analysant attentivement les messages d'erreur de la console du navigateur, nous avons identifié et corrigé les erreurs de syntaxe. Dans l'ensemble, en faisant preuve de réflexion, de recherche et d'adaptabilité, nous sommes parvenus à surmonter ces obstacles et à répondre aux exigences du cahier des charges de manière satisfaisante.</strong></p>
+
+ </section>
+ <section id="intro">
+	<h2 id='conclu'><a href='#conclu'>Conclusion sur le degré de satisfaction du cahier des charges</a></h2> 
+	<h4>Conclusion</h4>
+	<p>Nous sommes extrêmement satisfaits du degré de réalisation de notre projet par rapport au cahier des charges initial. Malgré les défis rencontrés et les ajustements nécessaires, nous avons réussi à livrer un résultat qui répond à la majorité des spécifications et objectifs établis. Nous avons surmonté des difficultés techniques, résolu des problèmes complexes et trouvé des solutions adaptées tout au long du processus de développement. Bien que certains compromis aient été nécessaires comme l'abandon de la fonctionnalité de dégradation du signal, nous sommes fiers du travail accompli et de la qualité de notre produit final. Nous pensons avoir respecté l'essence du cahier des charges et avons pris des mesures pour fournir une expérience utilisateur agréable, une interface conviviale et des fonctionnalités fonctionnelles. Dans l'ensemble, nous estimons que notre projet a atteint un niveau de satisfaction élevé par rapport aux attentes initiales.</p>
+	<h4>Difficultés ressenties</h4>
+	<p>Cette SAÉ nous semble, après en avoir discuté avec les autres groupes, être la plus complexe car elle mobilise des connaissances dans quasiment tous les enseignements de l'année (programmation web, SQL, programmation script, gestion de projet, Linux...). De plus, les attentes sont particulièrement précises et poussées, l'implication nécessaire et le temps consacré est colossal, surtout pour un groupe où chaque personne n'effectue pas la tâche qui lui a été confiée à temps. Heureusement que nous étions 5 car le travail personnel a pu être réparti au mieux.</p>
+	<h4>Note par rapport à la difficulté estimée des autres SAEs </h4>
+	<p>Clément : 5/5</p>
+	<p>Simon : 4,5/5 </p>
+	<p>Maxime : 4/5 </p>
+	<p>Sylvio : 4,5/5</p>
+	<p>Ernest : 4,5/5</p>
+	<p><strong>Moyenne : 4,5/5</strong></p>
+ </section>
+ 
+ <footer class="mention">
+    <ul>
+	  <li>IUT de Blagnac</li>
+	  <li>Département Réseaux et Télécommunications</li>
+      <li>BUT1</li>
+	</ul>  
+  </footer>
+ 
+</body>
+</html>
