@@ -21,8 +21,8 @@ require '../../connexion_bd.php';
 
 
 //Request to add the measure
-$sql5 = "INSERT INTO mesures (`valeur_c1`, `valeur_c2`, `valeur_c3`, `date`, `heure`, `case_val`) 
-         VALUES ('$val1', '$val2' ,'$val3', STR_TO_DATE('$Date', '%Y-%m-%d'), '$horaire', `$case`)";
+$sql5 = "INSERT INTO mesures (`valeur_c1`, `valeur_c2`, `valeur_c3`, `date`, `heure`, `case_val`, `processed`) 
+         VALUES ('$val1', '$val2' ,'$val3', '$Date', '$horaire', '$case', 0)";
 $result5 = mysqli_query($conn, $sql5);
 
 

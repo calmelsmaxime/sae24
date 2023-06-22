@@ -4,7 +4,7 @@
 require '../connexion_bd.php';
 
 //Requête pour trouver le dernier id 
-$sql4 = 'SELECT id FROM mesures
+$sql4 = 'SELECT id FROM resultat
 		ORDER BY id DESC
 		LIMIT 1';
 $result4 = mysqli_query($conn, $sql4);
@@ -21,13 +21,13 @@ $row2 = mysqli_fetch_assoc($result2);
 $m = 0;
 while ($row2) {
     $m++;
-    $dern_position[$m] = $row2['case'];
+    $dern_position[$m] = $row2['case_value'];
 	$row2 = mysqli_fetch_assoc($result2); // Mettre à jour $row2 pour obtenir le prochain enregistrement
 }
 
 
 // Requête pour trouver les 4 dernière mesures sans la toute dernière et la 5
-$sql = "SELECT DISTINCT id, `case` FROM resultat
+$sql = "SELECT DISTINCT id, `case_value` FROM resultat
 		ORDER BY id DESC
 		LIMIT 3 OFFSET 1";
 $result = mysqli_query($conn, $sql);
@@ -37,18 +37,18 @@ $f = 0;
 // Les stocks dans des variables
 while ($row) {
     $f++;
-    $position_mil[$f] = $row['case'];
+    $position_mil[$f] = $row['case_value'];
 	$row = mysqli_fetch_assoc($result); // Mettre à jour $row2 pour obtenir le prochain enregistrement
 }
 
 
 // Reqête pour trouver la 5ème dernière valeur
-$sql3 = "SELECT DISTINCT id, `case` FROM resultat
+$sql3 = "SELECT DISTINCT id, `case_value` FROM resultat
 		ORDER BY id DESC
 		LIMIT 1 OFFSET 4";
 $result3 = mysqli_query($conn, $sql3);
 $row3 = mysqli_fetch_assoc($result3);
-$val5 = $row3['case'];
+$val5 = $row3['case_value'];
 
 
 

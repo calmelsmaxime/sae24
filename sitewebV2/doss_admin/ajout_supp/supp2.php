@@ -44,16 +44,16 @@
 	
 
 	// Recherche des heures
-	$sql2 = "SELECT horaire, date FROM mesures
+	$sql2 = "SELECT heure, date FROM mesures
 			WHERE date = '$date'
-			ORDER BY horaire DESC";
+			ORDER BY heure DESC";
 	$result2 = mysqli_query($conn, $sql2);
 	
 			
 	while ($row2 = mysqli_fetch_assoc($result2)){
-		$heure = $row2['horaire'];
+		$heure = $row2['heure'];
 		$heure_formatee = date("H:i:s", strtotime($heure));		
-		echo "<option value=$heure_formatee> $heure_formatee </option>";
+		echo "<option value= '$heure_formatee' > $heure_formatee </option>";
 		
 	};
 	
@@ -62,7 +62,8 @@
 mysqli_close($conn);
 
 echo "</select><br>";
-echo "date";
+
+echo '<input type="hidden" name="date" value="' . $date . '">';
 
 	
 	?>

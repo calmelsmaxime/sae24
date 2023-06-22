@@ -47,6 +47,10 @@ require '5_dern_val.php';
 	</div>
  </section>
  
+<br>
+<br>
+<br>
+
  <section>
 <h1 class="titretabl"> Affichage des 5 dernières mesures réelles sous forme de tableau</h1>
 <br>

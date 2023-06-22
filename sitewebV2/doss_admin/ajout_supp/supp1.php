@@ -42,13 +42,12 @@
 	
 	// Recherche les dates
 	$sql = "SELECT DISTINCT date FROM mesures
-			WHERE date = '$date'
 			ORDER BY date DESC";
 	$result = mysqli_query($conn, $sql);
 	
 	while ($row = mysqli_fetch_assoc($result)){
-		$date = $row ['date'];		
-		echo "<option value=$date> $date </option>";
+		$date = $row ['date'];
+		echo "<option value='$date'> $date </option>";
 		
 	};
 	

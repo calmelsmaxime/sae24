@@ -40,7 +40,8 @@
         <tr>
             <th>Date</th>
             <th>Heure</th>
-			<th>Case</th>
+			<th>Case réelle</th>
+			<th>Case calculée</th>
             <th>Amplitude capteur 1</th>
 			<th>Amplitude capteur 2</th>
 			<th>Amplitude capteur 3</th>
@@ -65,6 +66,7 @@ while ($row = mysqli_fetch_assoc($result)){
     $date = $row['date']; 
 	$heure = $row['heure'];
 	$heure_formatee = date("H:i:s", strtotime($heure));
+	$case_reel =  $row['case_val'];
 	$amplitude_capteur_1 = $row ['valeur_c1'];
 	$amplitude_capteur_2 = $row ['valeur_c2'];
 	$amplitude_capteur_3 = $row ['valeur_c3'];
@@ -75,12 +77,13 @@ while ($row = mysqli_fetch_assoc($result)){
 	$result2 = mysqli_query($conn, $sql2);
 	$row2 = mysqli_fetch_assoc($result2);
 	
-	$case = $row2 ['case'];
+	$case = $row2 ['case_value'];
 
    // Displaying the latest values
         echo '<tr><td>', 
 			$date, '</td><td>', 
-			$heure_formatee, '</td><td>', 
+			$heure_formatee, '</td><td>',
+			$case_reel, '</td><td>',
 			$case, '</td><td>', 
 			$amplitude_capteur_1, '</td><td>',
 			$amplitude_capteur_2, '</td><td>',
