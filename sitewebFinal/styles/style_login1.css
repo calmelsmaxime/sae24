@@ -4,7 +4,6 @@
 }
 
 
-/*Pour éviter que les navigateurs imposent leur propre marge*/
 
 * {
     margin: 0;
@@ -12,7 +11,6 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    /*la largeur et la hauteur des éléments sont calculées en prenant en compte le contenu, les bordures et les marges.*/
 }
 
 body {

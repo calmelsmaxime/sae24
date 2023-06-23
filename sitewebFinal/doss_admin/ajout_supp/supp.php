@@ -15,20 +15,20 @@ $horaire = $_POST['horaire'];
 
 require '../../connexion_bd.php';
 
-// Cherche l'id correspondant dans la table mesure
+// Look for the corresponding id in the measurement table
 $sql = "SELECT * FROM mesures
 		WHERE date = '$Date' AND heure = '$horaire' ";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
 $id = $row['id'];
 
-//Suprime l'id dans la table resultat
+//Remove the id from the result table
 $sql2 = "DELETE FROM resultat
 		WHERE id = $id ";
 $result2 = mysqli_query($conn, $sql2);
 
 
-//Suprime l'id dans la table mesure
+//Remove the id in the measure table
 $sql3 = "DELETE FROM mesures
 		WHERE id = $id ";
 $result3 = mysqli_query($conn, $sql3);

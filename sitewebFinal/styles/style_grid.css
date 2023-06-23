@@ -22,29 +22,29 @@
 }
 
 .bloc_red{
-	background-color: red;
+	background-color: #6BFE68;
     border: 1px solid #7e7e7e;
 }
 
 .bloc_green{
-	background-color: green;
+	background-color: #027100;
     border: 1px solid #7e7e7e;
 }
 
 .bloc_orange{
-	background-color: orange;
+	background-color: #05FF00;
     border: 1px solid #7e7e7e;
 
 }
 
 .bloc_bleu{
-	background-color: blue;
+	background-color: #039F00;
     border: 1px solid #7e7e7e;
 
 }
 
 .bloc_jaune{
-	background-color: #FFFF00;
+	background-color: #04D000;
     border: 1px solid #7e7e7e;
 
 }
@@ -52,23 +52,22 @@
 .rouge{
     text-align: center;
 	padding : 10px;
-    color: white;
-	background-color:red;
+	background-color:#6BFE68;
 	border-radius: 20px;
 }
 
 .orange{
 	text-align: center;
 	padding : 10px;
-    color: white;
-	background-color:orange;
+	background-color:#05FF00;
 	border-radius: 20px;
 }
 
 .jaune{
 	text-align: center;
 	padding : 10px;
-	background-color:#FFFF00;
+	color: white;
+	background-color:#04D000;
 	border-radius: 20px;
 }
 
@@ -76,15 +75,15 @@
 	text-align: center;
 	padding : 10px;
     color: white;
-	background-color:blue;
+	background-color:#039F00;
 	border-radius: 20px;
 }
 
 .vert{
-		text-align: center;
+	text-align: center;
 	padding : 10px;
     color: white;
-	background-color:green;
+	background-color: #027100;
 	border-radius: 20px;
 }
 

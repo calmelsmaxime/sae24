@@ -4,15 +4,14 @@
 }
 
 
-/*Pour éviter que les navigateurs imposent leur propre marge*/
-
+/* To prevent browsers from imposing their own margin */
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    /*la largeur et la hauteur des éléments sont calculées en prenant en compte le contenu, les bordures et les marges.*/
+    /*the width and height of the elements are calculated taking into account the content, borders and margins*/
 }
 
 body {
@@ -46,7 +45,7 @@ h2{
 	
 }
 
-/*paragraphe d'accueil*/
+/*welcome paragraph*/
 
 #intro {
     display: flex;
@@ -90,7 +89,7 @@ section h2 a:hover {
     width : 50%;
     height : 50%;
 }
-/*Grille d'accueil*/
+/*Welcome grid*/
 
 #zero {
     display: flex;

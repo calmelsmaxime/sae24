@@ -51,7 +51,7 @@
 
 require '../connexion_bd.php';
 
-// Requête pour trouver les 10 dernière mesures dans la table 
+// Query to find the last 10 measurements in the table
 $sql = "SELECT * FROM mesures
 		ORDER BY id DESC
 		LIMIT 10";
@@ -59,7 +59,7 @@ $result = mysqli_query($conn, $sql);
 
 
 
-// Afficher dans le tableau
+// Show in table
 while ($row = mysqli_fetch_assoc($result)){
 
 	$id = $row['id'];
@@ -72,7 +72,7 @@ while ($row = mysqli_fetch_assoc($result)){
 	$amplitude_capteur_3 = $row ['valeur_c3'];
 
 	$sql2 = "SELECT * FROM resultat
-			WHERE id = $id 
+			WHERE id = '$id' 
 			LIMIT 1";
 	$result2 = mysqli_query($conn, $sql2);
 	$row2 = mysqli_fetch_assoc($result2);

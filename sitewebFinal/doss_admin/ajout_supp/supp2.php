@@ -43,7 +43,7 @@
 	require '../../connexion_bd.php';
 	
 
-	// Recherche des heures
+	//Hours search
 	$sql2 = "SELECT heure, date FROM mesures
 			WHERE date = '$date'
 			ORDER BY heure DESC";

@@ -1,0 +1,1 @@
+Lancer le script résultat en même temps / avant de lancer la récupération des données.

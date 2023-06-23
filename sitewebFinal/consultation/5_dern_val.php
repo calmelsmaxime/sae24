@@ -4,7 +4,7 @@
 require '../connexion_bd.php';
 
 	
-//Requête pour trouver le dernier id 
+//Query to find last id
 $sql4 = 'SELECT id FROM resultat
 		ORDER BY id DESC
 		LIMIT 1';
@@ -13,7 +13,7 @@ $row4 = mysqli_fetch_assoc($result4);
 $id_last = $row4['id'];
 
 
-// Reqête pour trouver la dernière valeur
+//Query to find last value
 $sql2 = "SELECT * FROM resultat
 		WHERE id = '$id_last'";
 $result2 = mysqli_query($conn, $sql2);
@@ -23,11 +23,11 @@ $m = 0;
 while ($row2) {
     $m++;
     $dern_position[$m] = $row2['case_value'];
-	$row2 = mysqli_fetch_assoc($result2); // Mettre à jour $row2 pour obtenir le prochain enregistrement
+	$row2 = mysqli_fetch_assoc($result2);
 }
 
 
-// Requête pour trouver la 4 ème mesures
+//Query to find the 4th measure
 $sql = "SELECT DISTINCT id, `case_value` FROM resultat
 		ORDER BY id DESC
 		LIMIT 1 OFFSET 1";
@@ -36,7 +36,7 @@ $row = mysqli_fetch_assoc($result);
 $val2 = $row['case_value'];
 
 
-// Requête pour trouver la 3 ème mesures
+//Query to find the 3rd measure
 $sql4 = "SELECT DISTINCT id, `case_value` FROM resultat
 		ORDER BY id DESC
 		LIMIT 1 OFFSET 2";
@@ -45,7 +45,7 @@ $row4 = mysqli_fetch_assoc($result4);
 $val3 = $row4['case_value'];
 
 
-// Requête pour trouver la 4 ème mesures
+//Query to find the 4th measure
 $sql5 = "SELECT DISTINCT id, `case_value` FROM resultat
 		ORDER BY id DESC
 		LIMIT 1 OFFSET 3";
@@ -54,7 +54,7 @@ $row5 = mysqli_fetch_assoc($result5);
 $val4 = $row5['case_value'];
 
 
-// Reqête pour trouver la 5ème dernière valeur
+//Query to find the 5th last value
 $sql3 = "SELECT DISTINCT id, `case_value` FROM resultat
 		ORDER BY id DESC
 		LIMIT 1 OFFSET 4";
@@ -64,7 +64,7 @@ $val5 = $row3['case_value'];
 
 
 
-//Boucle pour faire le graphique
+//Loop to make the graph
 
 for ($i = 15; $i >= 0 ;$i--) {
 
@@ -72,7 +72,7 @@ for ($i = 15; $i >= 0 ;$i--) {
         $position = "$j.$i";
         
 
-        // Vérifier si c'est la dernière valeur
+        //Check if this is the last value
         $isLastPosition = false;
         for ($p = 1; $p <= $m; $p++) {
             if ($dern_position[$p] === $position) {
@@ -81,20 +81,20 @@ for ($i = 15; $i >= 0 ;$i--) {
             }
         }
         
-        // Vérifier si c'est la 5ème dernière valeur
+        // Check if it is the 5th last value
         $isFifthLastPosition = ($val5 === $position);
         
-        // Vérifier si c'est la 4ème valeurs
+        //Check if it is the 4th value
 		$is4val = ($val4 === $position);
 		
-		// Vérifier si c'est la 3ème valeurs
+		//Check if it is the 3rd value
 		$is3val = ($val3 === $position);
 		
-		// Vérifier si c'est la 2ème valeurs
+		//Check if it is the 2nd value
 		$is2val = ($val2 === $position);
 		
         
-        // Générer la div correspondante en fonction de la position
+        //Generate corresponding div based on position
         if ($isLastPosition) {
             echo '<div class="bloc_green"></div>';
         } elseif ($isFifthLastPosition) {

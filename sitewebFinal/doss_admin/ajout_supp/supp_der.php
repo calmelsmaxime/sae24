@@ -12,7 +12,7 @@
 
 require '../../connexion_bd.php';
 
-//Requête pour trouver le dernier id 
+//Query to find last id
 $sql = 'SELECT id FROM mesures
 		ORDER BY id DESC
 		LIMIT 1';
@@ -21,12 +21,12 @@ $row = mysqli_fetch_assoc($result);
 $id_last = $row['id'];
 
 
-//Requête pour supprimer la dernière mesure dans la table resultat
+//Query to delete the last measurement in the result table
 $sql3 = "DELETE FROM resultat
 		WHERE id = $id_last";
 $result3 = mysqli_query($conn, $sql3);
 
-//Requête pour supprimer la dernière mesure dans la table mesure
+//Query to delete the last measurement in the measurement table
 $sql2 = "DELETE FROM mesures
 		WHERE id = $id_last";
 $result2 = mysqli_query($conn, $sql2);

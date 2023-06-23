@@ -12,6 +12,7 @@
 
 <section>
  <?php
+ 
 //Connecting to the database
 require '../connexion_bd.php';
 

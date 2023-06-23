@@ -40,7 +40,7 @@
 	
 	require '../../connexion_bd.php';
 	
-	// Recherche les dates
+	// Search dates
 	$sql = "SELECT DISTINCT date FROM mesures
 			ORDER BY date DESC";
 	$result = mysqli_query($conn, $sql);

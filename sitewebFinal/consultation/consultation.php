@@ -49,27 +49,28 @@ require '5_dern_val.php';
  
  <section class ="top"> 
 <section> 
- <p class = "vert" > Couleur de la dernière valeur</p>
+ <p class = "vert" > Dernière valeur </p>
+
 
  </section>
  
  <section>
- <p class = "bleu" > Couleur de l'avant dernière valeur</p>
+ <p class = "bleu" > Dernière valeur - 1 </p>
 
  </section>
  
  <section>
-  <p class = "jaune" >Couleur de la valeur d'avant</p>
+  <p class = "jaune" > Dernière valeur - 2 </p>
 
  </section>
  
  <section>
- <p class = "orange"> Couleur de la valeur d'avant</p>
+ <p class = "orange"> Dernière valeur - 3 </p>
 
  </section>
  
  <section>
- <p class = "rouge"> Couleur de la valeur qui va être supprimée</p>
+ <p class = "rouge"> Dernière valeur - 4 </p>
 
  </section>
   </section>
